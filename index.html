@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <meta name="description" content="Front-end Developer Portfolio" />
+    <meta name="author" content="Developer" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="logo">
+          <span class="logo-dev">Design</span>
+          <span class="logo-portfolio">Creative</span>
+        </a>
+
+        <div class="desktop-nav">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+
+        <div class="mobile-nav">
+          <button id="theme-toggle-mobile" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button id="menu-toggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><a href="#home" class="mobile-link">Home</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#projects" class="mobile-link">Projects</a></li>
+          <li><a href="#skills" class="mobile-link">Skills</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text animate-on-scroll">
+              <span class="badge">Front-End Developer</span>
+              <h1>
+                Crafting Digital 
+                Experiences as a <span class="changing-text">Developer</span>
+              </h1>
+              <p>
+                I design and build beautiful, interactive, and high-performance 
+                websites that deliver exceptional user experiences.
+              </p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">
+                  View My Work <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
+              </div>
+            </div>
+
+            <div class="hero-image animate-on-scroll">
+              <div class="profile-circle">
+                <div class="profile-inner">
+                  <img src="image.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Scroll Down</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-image animate-on-scroll">
+              <!-- Profile Image -->
+              <div class="profile-container">
+                <div class="profile-image">
+                  <div class="profile-placeholder"><img src="image.jpg"</div>
+                </div>
+              </div>
+
+              <!-- Stats -->
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <i class="fa-regular fa-clock"></i>
+                  <h3>Experience</h3>
+                  <p>6+ Month</p>
+                </div>
+
+                <div class="stat-card">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <h3>Location</h3>
+                  <p>Birniwa,Jigawa State, Nigeria</p>
+                </div>
+
+                <div class="stat-card">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <h3>Projects</h3>
+                  <p>20+ Completed</p>
+                </div>
+
+                <div class="stat-card">
+                  <i class="fa-solid fa-award"></i>
+                  <h3>Awards</h3>
+                  <p>10+ Received</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-text animate-on-scroll">
+              <span class="badge">About Me</span>
+              <h2>Dedicated to crafting exceptional digital experiences</h2>
+              <p>
+                I'm a passionate front-end developer with a strong background in creating 
+                responsive, accessible, and performant web applications. With expertise in 
+                HTML, CSS, JavaScript, and modern frameworks like React, I bring designs to 
+                life with clean, maintainable code.
+              </p>
+              <p>
+                My approach combines technical excellence with an eye for design and user experience. 
+                I'm constantly learning and adopting new technologies to deliver cutting-edge solutions 
+                that meet both business goals and user needs.
+              </p>
+              <a href="#contact" class="btn-primary">Let's Connect</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">My Work</span>
+            <h2>Featured Projects</h2>
+            <p>
+              Explore a selection of my recent work, showcasing my skills in front-end development,
+              responsive design, and interactive user experiences.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="https://placehold.co/600x400/e9e9e9/787878?text=E-Commerce+Project" alt="E-Commerce Platform">
+                <div class="project-overlay">
+                  <h3>E-Commerce Platform</h3>
+                  <div class="project-links">
+                    <a href="#" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#" aria-label="View GitHub repository"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>E-Commerce Platform</h3>
+                <p>A fully responsive e-commerce platform built with HTML, CSS, and JavaScript integration for payments.</p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Firebase</span>
+                </div>
+                <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="https://placehold.co/600x400/e9e9e9/787878?text=Task+Management+App" alt="Task Management App">
+                <div class="project-overlay">
+                  <h3>Task Management App</h3>
+                  <div class="project-links">
+                    <a href="#" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#" aria-label="View GitHub repository"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Task Management App</h3>
+                <p>A drag-and-drop task management app with user authentication and real-time updates.</p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Firebase</span>
+                  <span>Tailwind CSS</span>
+                </div>
+                <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="https://placehold.co/600x400/e9e9e9/787878?text=Travel+Planner" alt="Travel Planner">
+                <div class="project-overlay">
+                  <h3>Travel Planner</h3>
+                  <div class="project-links">
+                    <a href="#" aria-label="View live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#" aria-label="View GitHub repository"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Travel Planner</h3>
+                <p>An interactive travel planning application that helps users organize trips with maps integration.</p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Google Maps API</span>
+                </div>
+                <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-footer">
+            <a href="#" class="btn-primary">
+              View All Projects <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">My Skills</span>
+            <h2>Technical Expertise</h2>
+            <p>
+              A showcase of my technical skills and proficiencies that I've honed over years of 
+              building web applications and digital experiences.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-category animate-on-scroll">
+              <h3>Front-End</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon html-icon"><i class="fa-brands fa-html5"></i></div>
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="95"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon css-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <span class="skill-name">CSS3</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon js-icon"><i class="fa-brands fa-js"></i></div>
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon react-icon"><i class="fa-brands fa-react"></i></div>
+                    <span class="skill-name">React</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category animate-on-scroll">
+              <h3>Back-End</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon node-icon"><i class="fa-brands fa-node-js"></i></div>
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon express-icon"><i class="fa-solid fa-server"></i></div>
+                    <span class="skill-name">Express</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon mongo-icon"><i class="fa-solid fa-database"></i></div>
+                    <span class="skill-name">MongoDB</span>
+                    <span class="skill-percent">65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="65"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon api-icon"><i class="fa-solid fa-code-branch"></i></div>
+                    <span class="skill-name">REST APIs</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category animate-on-scroll">
+              <h3>Other</h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon git-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <span class="skill-name">Git</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="85"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon perf-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                    <span class="skill-name">Performance</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon ui-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                    <span class="skill-name">UI/UX</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="75"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <div class="skill-icon responsive-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <span class="skill-name">Responsive</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-counters">
+            <div class="counter-item animate-on-scroll">
+              <h3><span class="counter" data-count="5">0</span>+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="counter-item animate-on-scroll">
+              <h3><span class="counter" data-count="20">0</span>+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="counter-item animate-on-scroll">
+              <h3><span class="counter" data-count="5">0</span>+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="counter-item animate-on-scroll">
+              <h3><span class="counter" data-count="10">0</span>+</h3>
+              <p>Awards Received</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <span class="badge">Get In Touch</span>
+            <h2>Contact Me</h2>
+            <p>
+              Have a project in mind or want to discuss potential opportunities? Feel free to reach out.
+              I'm always open to new challenges and collaborations.
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info animate-on-scroll">
+              <h3>Let's Connect</h3>
+              <p>
+                I'm available for freelance work, full-time positions, or just a friendly chat
+                about web development. Don't hesitate to reach out!
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+                  <div class="contact-text">
+                    <h4>Email</h4>
+                    <a href="mailto:hello@example.com">usmanmuhdgarba682@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+                  <div class="contact-text">
+                    <h4>Phone</h4>
+                    <a href="tel:+11234567890">+234 (904) 634-3653</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="contact-text">
+                    <h4>Location</h4>
+                    <p>Birniwa, Jigawa state, Nigeria</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <h4>Follow Me</h4>
+                <div class="social-icons">
+                  <a href="#" aria-label="Github Profile"><i class="fa-brands fa-github"></i></a>
+                  <a href="#" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" aria-label="Twitter Profile"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+
+              <a href="#" class="btn-primary">Download Resume</a>
+            </div>
+
+            <div class="contact-form-container animate-on-scroll">
+              <div class="form-card">
+                <h3>Send a Message</h3>wd,r
+                <form id="contact-form">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="usman">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="usman@example.com">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="I'd like to discuss a project..."></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-primary btn-submit">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span class="spinner"></span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="scroll-top">
+          <button id="scroll-to-top" aria-label="Scroll to top">
+            <i class="fa-solid fa-chevron-up"></i>
+          </button>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3 class="footer-logo">
+              <span class="logo-dev">Design</span>
+              <span class="logo-portfolio">Creative</span>
+            </h3>
+            <p>
+              Creating elegant, responsive, and high-performance websites that deliver exceptional user experiences.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Get In Touch</h4>
+            <address>
+              <p>Birniwa,Jigawa state, Nigeria</p>
+              <p><a href="mailto:hello@example.com">usmanmuhdgarba682@gmail.com</a></p>
+              <p><a href="tel:+2349046343653">+234 (904) 634-3653</a></p>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> DesignCreative. All rights reserved.</p>
+          <p>Designed & Built with ❤️</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+      <div class="toast-content">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <div class="toast-message">
+          <span class="toast-title">Success</span>
+          <span class="toast-description">Message sent successfully!</span>
+        </div>
+      </div>
+      <button class="toast-close" id="toast-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
